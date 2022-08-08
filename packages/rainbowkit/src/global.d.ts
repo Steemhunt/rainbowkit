@@ -7,3 +7,9 @@ declare module '*.png' {
   const dataUrl: string;
   export default dataUrl;
 }
+
+declare global {
+  interface Window {
+    klaytn: any;
+  }
+}

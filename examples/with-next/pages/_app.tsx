@@ -44,6 +44,7 @@ const connectors = connectorsForWallets([
       wallet.argent({ chains }),
       wallet.trust({ chains }),
       wallet.ledger({ chains }),
+      wallet.kaikas({ chains }),
     ],
   },
 ]);

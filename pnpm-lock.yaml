@@ -257,6 +257,7 @@ importers:
       '@vanilla-extract/dynamic': 2.0.2
       '@vanilla-extract/private': ^1.0.2
       '@vanilla-extract/sprinkles': 1.4.1
+      '@wagmi/core': ^0.4.2
       autoprefixer: ^10.4.0
       clsx: 1.1.1
       ethers: ^5.0.0
@@ -270,6 +271,7 @@ importers:
       '@vanilla-extract/css': 1.7.0
       '@vanilla-extract/dynamic': 2.0.2
       '@vanilla-extract/sprinkles': 1.4.1_@vanilla-extract+css@1.7.0
+      '@wagmi/core': 0.4.2_ethers@5.6.2+react@18.1.0
       clsx: 1.1.1
       qrcode: 1.5.0
       react-remove-scroll: 2.5.4_react@18.1.0
@@ -7037,6 +7039,26 @@ packages:
       - supports-color
     dev: true
 
+  /@wagmi/core/0.4.2_ethers@5.6.2+react@18.1.0:
+    resolution: {integrity: sha512-fd9niO/Wwr6MhaNeIjgHP3ToULAWKQ8neITgU7gAN5Q4uxbizKM8e6+i4EiffTKyaqvauMHa32Xz5zY7N+WAKA==}
+    peerDependencies:
+      '@coinbase/wallet-sdk': '>=3.3.0'
+      '@walletconnect/ethereum-provider': '>=1.7.5'
+      ethers: '>=5.5.1'
+    peerDependenciesMeta:
+      '@coinbase/wallet-sdk':
+        optional: true
+      '@walletconnect/ethereum-provider':
+        optional: true
+    dependencies:
+      ethers: 5.6.2
+      eventemitter3: 4.0.7
+      zustand: 4.0.0-rc.1_react@18.1.0
+    transitivePeerDependencies:
+      - immer
+      - react
+    dev: false
+
   /@wagmi/core/0.4.2_react@18.1.0:
     resolution: {integrity: sha512-fd9niO/Wwr6MhaNeIjgHP3ToULAWKQ8neITgU7gAN5Q4uxbizKM8e6+i4EiffTKyaqvauMHa32Xz5zY7N+WAKA==}
     peerDependencies:
@@ -9046,8 +9068,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      is-text-path: 1.0.1
       JSONStream: 1.3.5
+      is-text-path: 1.0.1
       lodash: 4.17.21
       meow: 8.1.2
       split2: 3.2.2
@@ -19971,7 +19993,6 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.1.0
-    dev: true
 
   /use-sync-external-store/1.2.0_react@18.1.0:
     resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
@@ -20971,7 +20992,6 @@ packages:
     dependencies:
       react: 18.1.0
       use-sync-external-store: 1.1.0_react@18.1.0
-    dev: true
 
   /zwitch/2.0.2:
     resolution: {integrity: sha512-JZxotl7SxAJH0j7dN4pxsTV6ZLXoLdGME+PsjkL/DaBrVryK9kTGq06GfKrwcSOqypP+fdXGoCHE36b99fWVoA==}
